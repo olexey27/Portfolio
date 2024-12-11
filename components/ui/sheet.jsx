@@ -3,7 +3,6 @@ import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils"
-
 import { IoMdClose } from "react-icons/io"
 
 const Sheet = SheetPrimitive.Root
@@ -46,22 +45,26 @@ const sheetVariants = cva(
 
 const SheetContent = React.forwardRef(
   ({ side = "right", className, children, ...props }, ref) => (
-  <SheetPortal>
-    <SheetOverlay />
-    <SheetPrimitive.Content 
-      ref={ref} 
-      className={cn(sheetVariants({ side }), className)} 
-      {...props}
+    <SheetPortal>
+      <SheetOverlay />
+      <SheetPrimitive.Content
+        ref={ref}
+        className={cn(sheetVariants({ side }), className)}
+        aria-labelledby={props['aria-labelledby'] || "default-title"}
+        {...props}
       >
-      {children}
-      <SheetPrimitive.Close className="absolute right-8 top-8 transition-opacity outline-none">
-        <IoMdClose className="text-3xl text-accent" />
-        <span className="sr-only">Close</span>
-      </SheetPrimitive.Close>
-    </SheetPrimitive.Content>
-  </SheetPortal>
-))
-SheetContent.displayName = SheetPrimitive.Content.displayName
+        <SheetPrimitive.Title id="default-title" className="sr-only">
+          Default Title
+        </SheetPrimitive.Title>
+        {children}
+        <SheetPrimitive.Close className="absolute right-8 top-8 transition-opacity outline-none">
+          <IoMdClose className="text-3xl text-accent" />
+          <span className="sr-only">Close</span>
+        </SheetPrimitive.Close>
+      </SheetPrimitive.Content>
+    </SheetPortal>
+  )
+);
 
 const SheetHeader = ({
   className,
