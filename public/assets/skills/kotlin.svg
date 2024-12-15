@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <!-- Hintergrund -->
+  <rect width="100" height="100" fill="#1E1E2E" />
+  <!-- Diagonale Blau -->
+  <path d="M0 0L100 100H50L0 50V0Z" fill="#0A74DA" />
+  <!-- Diagonale Orange -->
+  <path d="M50 0L100 0L0 100L0 50L50 0Z" fill="#F88A0E" />
+</svg>
