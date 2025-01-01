@@ -100,7 +100,7 @@ const education = {
         },
         {
             insitution: "Udemy Course",
-            degree: "ASPNET Core Angular app from scratch",
+            degree: "ASPNET Core Angular app",
             duration: "2024",
         },
         {
