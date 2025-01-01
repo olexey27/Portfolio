@@ -30,26 +30,6 @@ const projects = [
         live: "",
         github: "https://github.com/olexey27/WatchChainiOS",
     },
-    {
-        num: "02",
-        category: "WatchDate",
-        title: "project 2",
-        discription: "ja kdfziprkl kjdkhfjdhlfdh jhfjdhfkjdhfjdf.",
-        stack: [{ name: "HTML5" }, { name: "Bootstrap" }, { name: "CSS" }, { name: "TypeScript" }, { name: "C#" }],
-        image: "/assets/work/thumb2.png",
-        live: "",
-        github: "https://github.com/olexey27/WatchDate",
-    },
-    {
-        num: "03",
-        category: "fronted",
-        title: "project 3",
-        discription: "ja kdfziprkl kjdkhfjdhlfdh jhfjdhfkjdhfjdf.",
-        stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-        image: "/assets/work/thumb3.png",
-        live: "",
-        github: "",
-    },
 ];
 
 const Work = () => {

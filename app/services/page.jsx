@@ -7,26 +7,14 @@ const services = [
     {
         num: "01",
         title: "Web Development",
-        description: "Lorem ipsu hahdkfkvs kfcnskc. hahdf",
-        href: ""
+        description: "I create modern, responsive, and user-friendly websites tailored to your needs. Whether you’re looking for a sleek portfolio, an engaging business website, or a dynamic web application, I focus on clean design, seamless functionality, and optimal performance. Let’s build a digital presence that stands out!",
+        href: "https://github.com/olexey27/WatchDate"
     },
     {
         num: "02",
         title: "iOS",
-        description: "Lorem ipsu hahdkfkvs kfcnskc. hahdf",
-        href: ""
-    },
-    {
-        num: "03",
-        title: "UI/UX",
-        description: "Lorem ipsu hahdkfkvs kfcnskc. hahdf",
-        href: ""
-    },
-    {
-        num: "04",
-        title: "AI",
-        description: "Lorem ipsu hahdkfkvs kfcnskc. hahdf",
-        href: ""
+        description: "I design and develop intuitive, high-performing iOS applications using Swift and Xcode. From concept to deployment, I focus on creating apps that align with your vision while delivering a seamless user experience. Whether it’s a productivity tool, a lifestyle app, or a custom solution, I’m here to bring your ideas to life within the Apple ecosystem.",
+        href: "https://github.com/olexey27/WatchChainiOS"
     },
 ];
 
