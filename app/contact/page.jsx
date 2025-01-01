@@ -14,18 +14,32 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
 
 const info = [
     {
         icon: <FaPhoneAlt />,
         title: "Phone",
-        description: "4767676765756",
+        description: "+49 160 1869831",
     },
     {
         icon: <FaEnvelope />,
         title: "Email",
-        description: "adsd@gmail.com",
+        description: "allxyog@gmail.com",
+    },
+    {
+        icon: <FaLinkedin />,
+        title: "LinkedIn",
+        description: (
+            <a
+                href="https://www.linkedin.com/in/alexej-krasnokutskij-3a2920235/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline"
+            >
+                Just click
+            </a>
+        ),
     },
 ];
 
@@ -49,7 +63,7 @@ const Contact = () => {
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Let's work together</h3>
                             <p className="text-white/60">
-                                jhjdchdgcjshjsxhjcbjvkndbdjbcsbjsxnsjnckncd.
+                                Are you looking for a passionate developer to bring your ideas to life? As a junior iOS and web developer, I’m eager to take on new challenges and help you create functional and user-friendly applications or websites. While I’m still growing in my career, I’m committed to delivering high-quality work and learning along the way. Let’s collaborate and make your project a reality! Fill out the form, and I’ll get in touch to discuss how we can work together to bring your vision to life.
                             </p>
                             {/* input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
