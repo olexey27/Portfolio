@@ -23,8 +23,8 @@ const Home = () => {
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a 
-                href="/AlexejKrasnokutskij.pdf" // Link zur PDF-Datei im public-Ordner
-                download="AlexejKrasnokutskij.pdf" // Dateiname beim Herunterladen
+                href="https://drive.google.com/file/d/1bk0ag1LByBoTgSVjNPnJ8RW2iFrOvw1d/view?usp=sharing" // Link zur PDF-Datei im public-Ordner
+                download="Alexej_Krasnokutskij_CV.pdf" // Dateiname beim Herunterladen
                 target="_blank" // Öffnet die Datei in einem neuen Tab
                 rel="noopener noreferrer" // Sicherheitsmaßnahme
                 className="uppercase flex items-center gap-4 border border-accent px-6 py-2 rounded hover:bg-accent hover:text-primary transition-all duration-500"
