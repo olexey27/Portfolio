@@ -18,18 +18,20 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Alexej Krasnokutskij</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            If you would like a quick overview, feel free to download my resume or open it in a separate tab.
+              If you would like a quick overview, feel free to download my resume or open it in a separate tab.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="uppercase flex items-center gap-2"
+              <a 
+                href="/AlexejKrasnokutskij.pdf" // Link zur PDF-Datei im public-Ordner
+                download="AlexejKrasnokutskij.pdf" // Dateiname beim Herunterladen
+                target="_blank" // Öffnet die Datei in einem neuen Tab
+                rel="noopener noreferrer" // Sicherheitsmaßnahme
+                className="uppercase flex items-center gap-4 border border-accent px-6 py-2 rounded hover:bg-accent hover:text-primary transition-all duration-500"
               >
-                  <span>Download CV</span>
-                  <FiDownload className="text-xl"/>
-              </Button>
+                <span>Download CV</span>
+                <FiDownload className="text-xl" />
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Social 
                   containerStyles="flex gap-6"
