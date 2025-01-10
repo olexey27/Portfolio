@@ -30,6 +30,16 @@ const projects = [
         live: "",
         github: "https://github.com/olexey27/WatchChainiOS",
     },
+    {
+        num: "02",
+        category: "My Portfolio",
+        title: "project 2",
+        discription: "Portfolio is a responsive and modern website built with React and Next.js, showcasing my skills, projects, and experience as a Junior Deverloper. Designed for an intuitive user experience, it features seamless navigation, an integrated contact form, and is optimized for performance on Vercel. This project reflects my technical expertise and focus on user-centric design.",
+        stack: [{ name: "Tailwind CSS" }, { name: "React" }, { name: "next.js" }, { name: "JavaScript" }],
+        image: "/assets/work/projekt2.png",
+        live: "https://portfolio-seven-tau-99.vercel.app/",
+        github: "https://github.com/olexey27/Portfolio",
+    },
 ];
 
 const Work = () => {
