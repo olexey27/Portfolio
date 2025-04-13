@@ -55,6 +55,11 @@ const experience = {
     description: "Throughout my career, I have gained diverse experience across various industries, which has shaped my strong work ethic, problem-solving abilities, and teamwork skills. As a Service Employee, I developed excellent customer service and communication skills, always striving to ensure client satisfaction in a fast-paced environment. My time as a Store Manager helped me refine my leadership abilities, from managing teams and controlling inventory to overseeing daily operations and ensuring everything ran smoothly. In the past, I worked as a Process Mechanic, where I learned to work systematically and pay close attention to detail. My role involved overseeing and optimizing production processes to ensure high-quality results. Additionally, my experience in Picking taught me how to stay organized and efficient, even under tight deadlines. These experiences have given me a versatile skill set and a proactive mindset. I enjoy taking on new challenges and adapting to different environments, always looking for ways to grow and contribute effectively to my work.",
     items: [
         {
+            company: "Teleperformance Portugal - City Center HQ",
+            position: "Content Manager",
+            duration: "2025-Now",
+        },
+        {
             company: "Stückwerk Lüdenscheid",
             position: "Service employee",
             duration: "2022-2025",
