@@ -14,7 +14,7 @@ import { SiTailwindcss, SiNextdotjs, SiSwift, SiKotlin, SiMysql } from "react-ic
 
 // about data
 const about = {
-    title: "About me",
+    title: "About me 👤",
     description: "I’m Alexej, a passionate iOS and web developer focused on creating modern, user-friendly applications and innovative web solutions. With over 3 years of experience in software development, I specialize in building scalable apps for the Apple ecosystem as well as performant, responsive websites. I combine technical expertise in Swift, SwiftUI, and Objective-C with comprehensive knowledge of web technologies like HTML, CSS, JavaScript, and modern frameworks (e.g., React, Angular). My goal is to create high-quality software that excels both technically and visually.In my work, I place great emphasis on clean code, agile processes, and close collaboration with my clients to deliver tailored solutions. I look forward to working on new projects that enhance digital experiences and deliver sustainable results.",
     info: [
         {
@@ -51,7 +51,7 @@ const about = {
 // experience data
 const experience = {
     icon: "/assets/resume/badge.svg",
-    title: "My experience",
+    title: "My experience 🛠️",
     description: "Throughout my career, I have gained diverse experience across various industries, which has shaped my strong work ethic, problem-solving abilities, and teamwork skills. As a Service Employee, I developed excellent customer service and communication skills, always striving to ensure client satisfaction in a fast-paced environment. My time as a Store Manager helped me refine my leadership abilities, from managing teams and controlling inventory to overseeing daily operations and ensuring everything ran smoothly. In the past, I worked as a Process Mechanic, where I learned to work systematically and pay close attention to detail. My role involved overseeing and optimizing production processes to ensure high-quality results. Additionally, my experience in Picking taught me how to stay organized and efficient, even under tight deadlines. These experiences have given me a versatile skill set and a proactive mindset. I enjoy taking on new challenges and adapting to different environments, always looking for ways to grow and contribute effectively to my work.",
     items: [
         {
@@ -90,7 +90,7 @@ const experience = {
 // education data
 const education = {
     icon: "/assets/resume/cap.svg",
-    title: "My education",
+    title: "My education 📚",
     description: "I completed a comprehensive training program in app development, where I gained a strong foundation in building mobile applications and understanding software development principles. This formal education provided me with expertise in core programming languages and frameworks, particularly in iOS development with Swift. To further enhance my knowledge and stay updated with industry trends, I pursued additional learning through Udemy courses. These self-paced programs allowed me to deepen my understanding of modern technologies such as Kotlin, JavaScript, React, and Angular, enabling me to expand my skill set and deliver high-quality software solutions. My commitment to continuous learning has equipped me with the tools and skills to tackle complex projects and adapt to evolving technologies.",
     items: [
         {
@@ -127,7 +127,7 @@ const education = {
 
 // skills data
 const skills = {
-    title: "My skills",
+    title: "My skills 🚀",
     description: "I have extensive experience in developing modern applications and web solutions, with a primary focus on Swift and JavaScript, my core programming languages. Leveraging these skills, I create powerful, feature-rich iOS applications as well as dynamic and interactive web applications tailored to user needs. In addition to my expertise in Swift and JavaScript, I possess solid knowledge of Kotlin for Android development, allowing me to build efficient and scalable mobile solutions across platforms. My proficiency extends to modern frontend frameworks such as Angular and React, which I use to design and implement responsive, high-performing, and user-centric web interfaces. My diverse technical skill set empowers me to deliver cross-platform and bespoke software solutions that are both functionally robust and visually appealing. I stay committed to maintaining clean, efficient code while adhering to industry best practices, ensuring every project meets high standards of quality and performance. Furthermore, I am continuously advancing my skills by exploring emerging technologies, keeping up with the latest trends, and applying innovative approaches to problem-solving. This drive for excellence ensures that my work not only meets but exceeds expectations.",
     skillList: [
         {

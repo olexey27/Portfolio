@@ -37,7 +37,7 @@ const info = [
                 rel="noopener noreferrer"
                 className="text-accent hover:underline"
             >
-                Just click
+                𝑪𝒍𝒊𝒄𝙠👆🏼
             </a>
         ),
     },
@@ -61,7 +61,7 @@ const Contact = () => {
                     {/* form */ }
                     <div className="xl:w-[54%] order-2 xl:order-none">
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-                            <h3 className="text-4xl text-accent">Let's work together</h3>
+                            <h3 className="text-4xl text-accent">Let's work together 🤜🏼🤛🏽</h3>
                             <p className="text-white/60">
                                 Are you looking for a passionate developer to bring your ideas to life? As a junior iOS and web developer, I’m eager to take on new challenges and help you create functional and user-friendly applications or websites. While I’m still growing in my career, I’m committed to delivering high-quality work and learning along the way. Let’s collaborate and make your project a reality! Fill out the form, and I’ll get in touch to discuss how we can work together to bring your vision to life.
                             </p>
