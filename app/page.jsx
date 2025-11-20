@@ -23,7 +23,7 @@ const Home = () => {
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a 
-                href="https://drive.google.com/file/d/1bk0ag1LByBoTgSVjNPnJ8RW2iFrOvw1d/view?usp=sharing" // Link zur PDF-Datei im public-Ordner
+                href="https://drive.google.com/file/d/1B8shEv3zfyVOy_k4QTYSOqnhv9BElBEo/view?usp=sharing" // Link zur PDF-Datei im public-Ordner
                 download="Alexej_Krasnokutskij_CV.pdf" // Dateiname beim Herunterladen
                 target="_blank" // Öffnet die Datei in einem neuen Tab
                 rel="noopener noreferrer" // Sicherheitsmaßnahme
