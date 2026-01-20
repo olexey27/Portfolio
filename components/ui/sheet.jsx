@@ -53,12 +53,8 @@ const SheetContent = React.forwardRef(
       <SheetPrimitive.Content
         ref={ref}
         className={cn(sheetVariants({ side }), className)}
-        aria-labelledby={props["aria-labelledby"] || "default-title"}
         {...props}
       >
-        <SheetPrimitive.Title id="default-title" className="sr-only">
-          Default Title
-        </SheetPrimitive.Title>
         {children}
         <SheetPrimitive.Close className="absolute right-8 top-8 transition-opacity outline-none">
           <IoMdClose className="text-3xl text-accent" />
