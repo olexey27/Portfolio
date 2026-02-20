@@ -23,9 +23,9 @@ const Photo = () => {
                     className="w-[300px] h-[299px] xl:w-[500px] xl:h-[500px] mix-blend-lighten absolute"
                 >
                     <Image 
-                        src="/assets/photo2.PNG" 
+                        src="/assets/schickimicki.png" 
                         priority
-                        quality={100} 
+                        //quality={100} //
                         fill 
                         alt="" 
                         className="object-contain" 
