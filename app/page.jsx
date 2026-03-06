@@ -45,6 +45,14 @@ const Home = () => {
                   <span>Watch CV</span>
                   <HiOutlineEye className="text-xl" />
                 </Link>
+
+                {/* Certificates Button */}
+                <Link 
+                  href="/certificates"
+                  className="uppercase flex items-center gap-4 border border-accent px-6 py-2 rounded hover:bg-accent hover:text-primary transition-all duration-500"
+                >
+                  <span>Certificates 🚀</span>
+                </Link>
               </div>
 
               <div className="mb-8 xl:mb-0">
