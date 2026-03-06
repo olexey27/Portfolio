@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { HiOutlineEye } from "react-icons/hi";
+import Link from "next/link";
 
 // components
 import Social from "@/components/Social";
@@ -18,20 +20,33 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Alexej Krasnokutskij</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              If you would like a quick overview, feel free to download my resume or open it in a separate tab.
+              If you would like a quick overview, feel free to download my resume or view it online.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a 
-                href="https://drive.google.com/file/d/1B8shEv3zfyVOy_k4QTYSOqnhv9BElBEo/view?usp=sharing" // Link zur PDF-Datei im public-Ordner
-                download="Alexej_Krasnokutskij_CV.pdf" // Dateiname beim Herunterladen
-                target="_blank" // Öffnet die Datei in einem neuen Tab
-                rel="noopener noreferrer" // Sicherheitsmaßnahme
-                className="uppercase flex items-center gap-4 border border-accent px-6 py-2 rounded hover:bg-accent hover:text-primary transition-all duration-500"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                {/* Download CV Button */}
+                <a 
+                  href="https://drive.google.com/file/d/1B8shEv3zfyVOy_k4QTYSOqnhv9BElBEo/view?usp=sharing"
+                  download="Alexej_Krasnokutskij_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="uppercase flex items-center gap-4 border border-accent px-6 py-2 rounded hover:bg-accent hover:text-primary transition-all duration-500"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </a>
+
+                {/* Watch CV Button */}
+                <Link 
+                  href="/cv"
+                  className="uppercase flex items-center gap-4 bg-accent text-primary px-6 py-2 rounded hover:bg-accent-hover transition-all duration-500 font-semibold"
+                >
+                  <span>Watch CV</span>
+                  <HiOutlineEye className="text-xl" />
+                </Link>
+              </div>
+
               <div className="mb-8 xl:mb-0">
                 <Social 
                   containerStyles="flex gap-6"
