@@ -8,12 +8,12 @@ const DATA = {
   lastName: "Krasnokutskij",
   title: "Mobile & Web Developer",
   tagline: "Building iOS apps with SwiftUI & full-stack web apps with Angular and ASP.NET Core.",
-  email: "alexeykrasnokutskiy@gmail.com",
+  email: "alexeykrasnokutskiy@googlemail.com",
   phone: "+49 160 1869831",
-  location: "Portugal",
+  location: "Dortmund, Germany / Lisbon, Portugal",
   website: "olexey27.space",
   about:
-    "Self-driven Mobile & Web Developer with a strong foundation in iOS (Swift, SwiftUI) and full-stack web development (Angular, ASP.NET Core, Next.js). Completed 200+ hours of hands-on courses and a certified professional qualification in App Development. Passionate about clean code, modern design, and continuously levelling up.",
+    "Self-driven Mobile & Web Developer with a strong foundation in iOS (Swift, SwiftUI) and full-stack web development (Angular, ASP.NET Core, Next.js). Completed 200+ hours of hands-on courses and a certified professional qualification in App Development. Multilingual communicator with hands-on experience in fast-paced customer-facing environments. Passionate about clean code, modern design, and continuously levelling up.",
   skills: [
     { name: "Swift / SwiftUI",          level: 4 },
     { name: "Angular / TypeScript",     level: 4 },
@@ -23,6 +23,23 @@ const DATA = {
     { name: "Android / Kotlin",         level: 3 },
     { name: "Git / GitHub",             level: 3 },
     { name: "Figma / UX Design",        level: 3 },
+  ],
+  softSkills: [
+    "Fast learner in new environments",
+    "Working under pressure",
+    "Teamwork & Collaboration",
+    "Problem-solving on the fly",
+  ],
+  languages: [
+    { lang: "German",     level: "C2" },
+    { lang: "Russian",    level: "C1" },
+    { lang: "English",    level: "B2" },
+    { lang: "Portuguese", level: "A1" },
+  ],
+  hobbies: [
+    "Programming open-source projects",
+    "Artificial intelligence & automation",
+    "Fitness & outdoor activities",
   ],
   awards: [
     {
@@ -50,43 +67,67 @@ const DATA = {
     {
       year: "Feb 2022 – Feb 2023",
       degree: "IT-Fachkraft für App-Entwicklung (iOS & Android)",
-      institution: "Syntax Institut · Remote · Ilmenau, Germany",
+      institution: "Syntax Institut · Remote · Berlin, Germany",
+    },
+    {
+      year: "until 2015",
+      degree: "Secondary Education (Intermediate Diploma)",
+      institution: "Comprehensive School Kierspe · Germany",
     },
   ],
   experience: [
     {
-      period: "2024 – Present",
-      role: "Freelance Developer",
-      company: "Self-employed",
+      period: "Mar 2025 – Present",
+      role: "Content Manager",
+      company: "Teleperformance Portugal",
       bullets: [
-        "Building iOS apps with Swift, SwiftUI, SwiftData and Apple Intelligence APIs",
-        "Developing full-stack web apps with Angular and ASP.NET Core",
-        "Designing and shipping personal portfolio with Next.js, TypeScript and Tailwind CSS",
+        "Analysis and moderation of online content following established guidelines",
+        "Support in maintaining a safe online environment",
+        "Documentation and forwarding of guideline violations",
       ],
     },
     {
-      period: "2023 – 2024",
-      role: "Full-Stack Web Development",
-      company: "Self-study & Projects",
+      period: "Mar 2022 – Mar 2025",
+      role: "Service Employee (Part-Time)",
+      company: "Stückwerk Lüdenscheid",
       bullets: [
-        "Built e-commerce app with .NET Core MVC, Entity Framework, Stripe and Azure deployment",
-        "Developed full-stack app with ASP.NET Core API, Angular, SignalR and JWT auth",
-        "Completed 70+ hours of Angular and .NET courses with real-world project focus",
+        "Customer service and order acceptance in a restaurant",
+        "Cash register duties and coordination of orders",
+        "Support in food service and daily restaurant operations",
       ],
     },
     {
-      period: "Feb 2022 – Feb 2023",
-      role: "App Development Trainee",
-      company: "Syntax Institut · Remote",
+      period: "May 2019 – Feb 2022",
+      role: "Store Manager",
+      company: "Alles Taco GmbH & Blubber Botschaft UG",
       bullets: [
-        "Completed 2.300-unit professional qualification in iOS & Android App Development",
-        "Built iOS apps in Swift with Xcode, UIKit, MVC/MVVM and CocoaPods",
-        "Developed Android apps in Kotlin with Jetpack, Firebase, Retrofit and Room",
-        "Covered UX/UI Design with Figma, wireframing, prototyping and Material Design",
+        "Responsible for daily operations and team management",
+        "Planning for staff, inventory, and sales goals",
+        "Ensuring service, quality, and revenue standards",
+      ],
+    },
+    {
+      period: "Jun 2018 – Feb 2022",
+      role: "Process Mechanic",
+      company: "Erwin Seckelmann Kunststofftechnik",
+      bullets: [
+        "Setup, operation, and monitoring of production facilities",
+        "Quality control of manufactured products",
+        "Maintenance and minor repairs of machines",
+      ],
+    },
+    {
+      period: "Aug 2015 – Apr 2018",
+      role: "Commissioning",
+      company: "ESCHA GmbH & Co.KG",
+      bullets: [
+        "Support with inventories and warehouse organization",
+        "Control of quantities and quality of products",
+        "Compilation of customer orders from stock",
       ],
     },
   ],
-};
+}
 // ──────────────────────────────────────────────────────────────────
 
 function DotRating({ level, max = 5 }: { level: number; max?: number }) {
@@ -386,6 +427,51 @@ export default function CVPage() {
                       marginBottom: 4, lineHeight: 1.4 }}>{e.degree}</div>
                     <div style={{ fontSize: 12, color: C.accent, marginBottom: 5 }}>{e.institution}</div>
                     <div style={{ fontSize: 11, color: C.text3 }}>{e.year}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Languages */}
+              <div style={{ marginBottom: 40 }}>
+                {sectionLabel("Languages")}
+                {DATA.languages.map((l) => (
+                  <div key={l.lang} className="skill-row">
+                    <span style={{ fontSize: 12, color: C.text2 }}>{l.lang}</span>
+                    <span style={{
+                      fontSize: 11, fontWeight: 700, color: C.accent,
+                      background: "rgba(0,255,153,0.08)", border: "1px solid #00ff9930",
+                      borderRadius: 999, padding: "2px 10px",
+                    }}>{l.level}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Soft Skills */}
+              <div style={{ marginBottom: 40 }}>
+                {sectionLabel("Soft Skills")}
+                {DATA.softSkills.map((s, i) => (
+                  <div key={i} style={{
+                    display: "flex", alignItems: "center", gap: 8,
+                    fontSize: 12, color: C.text2,
+                    padding: "8px 0", borderBottom: `1px solid ${C.border}`,
+                  }}>
+                    <span style={{ color: C.accent, fontSize: 10 }}>▸</span>
+                    {s}
+                  </div>
+                ))}
+              </div>
+
+              {/* Hobbies */}
+              <div style={{ marginBottom: 40 }}>
+                {sectionLabel("Hobbies")}
+                {DATA.hobbies.map((h, i) => (
+                  <div key={i} style={{
+                    display: "flex", alignItems: "center", gap: 8,
+                    fontSize: 12, color: C.text2,
+                    padding: "8px 0", borderBottom: `1px solid ${C.border}`,
+                  }}>
+                    <span style={{ color: C.accent, fontSize: 10 }}>▸</span>
+                    {h}
                   </div>
                 ))}
               </div>
