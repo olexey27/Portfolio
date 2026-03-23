@@ -329,7 +329,7 @@ export default function CVPage() {
             {/* Contacts */}
             <div className="cv-header-contacts">
               {[
-                { icon: "✉", text: DATA.email },
+                { icon: "✉️", text: DATA.email },
                 { icon: "📞", text: DATA.phone },
                 { icon: "📍", text: DATA.location },
                 { icon: "🌐", text: DATA.website },
