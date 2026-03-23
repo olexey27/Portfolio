@@ -201,6 +201,43 @@ export default function CVPage() {
         }
         .link-row:hover { border-color: #00ff9960; background: #00ff9909; }
         .pulse-dot { animation: pulse 2s ease-in-out infinite; }
+        .cv-body {
+          display: grid;
+          grid-template-columns: 1fr 280px;
+          gap: 44px;
+        }
+        .cv-left  { order: 1; }
+        .cv-right { order: 2; }
+        .cv-header-inner {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-end;
+          justify-content: space-between;
+          gap: 32px;
+        }
+        .cv-header-contacts {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: flex-end;
+        }
+        @media (max-width: 768px) {
+          .cv-body {
+            grid-template-columns: 1fr;
+            gap: 0;
+          }
+          .cv-left  { order: 1; }
+          .cv-right { order: 2; }
+          .cv-header-inner {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .cv-header-contacts {
+            align-items: flex-start;
+            width: 100%;
+          }
+          .exp-card:hover { transform: none; }
+        }
       `}</style>
 
       <div className="cv-root" style={{
@@ -213,9 +250,7 @@ export default function CVPage() {
         <div style={{ maxWidth: 960, margin: "0 auto" }}>
 
           {/* ── HEADER ── */}
-          <div style={{
-            display: "flex", flexWrap: "wrap", alignItems: "flex-end",
-            justifyContent: "space-between", gap: 32,
+          <div className="cv-header-inner" style={{
             paddingBottom: 40, marginBottom: 48,
             borderBottom: `1px solid ${C.border}`,
           }}>
@@ -251,7 +286,7 @@ export default function CVPage() {
             </div>
 
             {/* Contacts */}
-            <div style={{ display: "flex", flexDirection: "column", gap: 8, alignItems: "flex-end" }}>
+            <div className="cv-header-contacts">
               {[
                 { icon: "✉", text: DATA.email },
                 { icon: "📞", text: DATA.phone },
@@ -272,10 +307,10 @@ export default function CVPage() {
           </div>
 
           {/* ── BODY ── */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 280px", gap: 44 }}>
+          <div className="cv-body">
 
             {/* LEFT */}
-            <div>
+            <div className="cv-left">
               {/* About */}
               <div style={{ marginBottom: 40 }}>
                 {sectionLabel("About me")}
@@ -316,7 +351,7 @@ export default function CVPage() {
             </div>
 
             {/* RIGHT */}
-            <div>
+            <div className="cv-right">
               {/* Skills */}
               <div style={{ marginBottom: 40 }}>
                 {sectionLabel("Skills")}
@@ -352,26 +387,6 @@ export default function CVPage() {
                     <div style={{ fontSize: 12, color: C.accent, marginBottom: 5 }}>{e.institution}</div>
                     <div style={{ fontSize: 11, color: C.text3 }}>{e.year}</div>
                   </div>
-                ))}
-              </div>
-
-              {/* Links */}
-              <div>
-                {sectionLabel("Links")}
-                {[
-                  { icon: "🌐", label: "Portfolio", value: DATA.website },
-                  { icon: "✉",  label: "Email",     value: DATA.email },
-                ].map((l) => (
-                  <a key={l.label} href="#" className="link-row">
-                    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ fontSize: 14 }}>{l.icon}</span>
-                      <span style={{ fontSize: 12, color: C.text2 }}>{l.label}</span>
-                    </span>
-                    <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                      <span style={{ fontSize: 11, color: C.text3 }}>{l.value}</span>
-                      <span style={{ color: C.accent, fontSize: 12 }}>→</span>
-                    </span>
-                  </a>
                 ))}
               </div>
             </div>
