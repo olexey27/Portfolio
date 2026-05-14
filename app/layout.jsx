@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import Footer from "@/components/Footer";
+import SplashWrapper from "@/components/SplashWrapper";
 
 const jetbrainsMono = JetBrains_Mono({ 
   subsets: ["latin"], 
@@ -23,17 +24,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={jetbrainsMono.variable}>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <StairTransition />
-          <PageTransition>
-            <main className="flex-grow">
-              {children}
-              <SpeedInsights />
-            </main>
-          </PageTransition>
-          <Footer />
-        </div>
+        <SplashWrapper>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <StairTransition />
+            <PageTransition>
+              <main className="flex-grow">
+                {children}
+                <SpeedInsights />
+              </main>
+            </PageTransition>
+            <Footer />
+          </div>
+        </SplashWrapper>
       </body>
     </html>
   );
