@@ -8,7 +8,7 @@ import Link from "next/link";
 // components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
-import Stats from "@/components/Stats";
+import GitHubActivity from "@/components/GitHubActivity";
 
 const Home = () => {
   const t = useTranslations("home");
@@ -84,8 +84,8 @@ const Home = () => {
             <Photo />
           </div>
         </div>
-      </div>
-      <Stats />
+      </div >
+      <GitHubActivity />
     </section>
   );
 };
