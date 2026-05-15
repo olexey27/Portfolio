@@ -1,10 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
-// ─── CERTIFICATES ─────────────────────────────────────────────────
-// Nimm den Google Drive Link: https://drive.google.com/file/d/FILE_ID/view
-// und trag nur die FILE_ID ein.
+import { useTranslations } from "next-intl";
 
 const CERTIFICATES = [
   {
@@ -13,7 +10,6 @@ const CERTIFICATES = [
     issuer: "Syntax Institut",
     date: "Feb 2023",
     fileId: "10nYGt_lYx7sdMr5NvOnJY3XeeRf_cMJP",
-    description: "Professional qualification in Mobile App Development covering UX/UI Design, Android (Kotlin) and iOS (Swift). 2.300 teaching units, completed February 2023.",
   },
   {
     id: 2,
@@ -21,7 +17,6 @@ const CERTIFICATES = [
     issuer: "Udemy",
     date: "Jul 2024",
     fileId: "1aOzw9SSvkAMz3OiHGa90fdVmb2JtlGy3",
-    description: "In-depth Angular course covering components, services, NgRx, signals, unit testing and REST API communication. 9.5 hours. Instructors: Denis Panjuta, Jannick Leismann.",
   },
   {
     id: 3,
@@ -29,7 +24,6 @@ const CERTIFICATES = [
     issuer: "Udemy",
     date: "Apr 2024",
     fileId: "1MUZh3Wpn7IOEHhNYW6zG4US8wtyV-yob",
-    description: "Full-stack course building a complete web app with ASP.NET Core API and Angular from scratch. 35 hours. Instructor: Neil Cummings.",
   },
   {
     id: 4,
@@ -37,7 +31,6 @@ const CERTIFICATES = [
     issuer: "Udemy",
     date: "Sep 2023",
     fileId: "1blPZmy_qZ_wQNrp2ir0zwFAB7MARLZdh",
-    description: "Complete ASP.NET Core MVC course building a full e-commerce app with Stripe payments, Identity Framework, Entity Framework and Azure deployment. 31 hours. Instructor: Bhrugen Patel.",
   },
   {
     id: 5,
@@ -45,7 +38,6 @@ const CERTIFICATES = [
     issuer: "Udemy",
     date: "Nov 2024",
     fileId: "1opWms5DdmoqVwJOh-wqiuBqUug-adniT",
-    description: "Complete iOS development bootcamp covering Swift, SwiftUI, ARKit, CoreML and 25+ real-world apps. 60.5 hours. Instructor: Dr. Angela Yu.",
   },
   {
     id: 6,
@@ -53,10 +45,8 @@ const CERTIFICATES = [
     issuer: "Udemy",
     date: "Jan 2026",
     fileId: "1ns29u5GjGGZ1dFMQTdU1gW5oQS2k2551",
-    description: "Advanced SwiftUI & SwiftData masterclass covering Apple Intelligence, on-device AI, Liquid Glass design and iOS 26. 37.5 hours. Instructor: Robert Petras.",
   },
 ];
-// ──────────────────────────────────────────────────────────────────
 
 type Certificate = (typeof CERTIFICATES)[number];
 
@@ -67,12 +57,13 @@ const ISSUER_ICONS: Record<string, string> = {
 };
 
 export default function CertificatesPage() {
-  const [active, setActive]   = useState<Certificate | null>(null);
+  const t = useTranslations("certificates");
+  const [active, setActive] = useState<Certificate | null>(null);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => setMounted(true), 1800);
-    return () => clearTimeout(t);
+    const timer = setTimeout(() => setMounted(true), 1800);
+    return () => clearTimeout(timer);
   }, []);
 
   if (!mounted) return null;
@@ -157,16 +148,19 @@ export default function CertificatesPage() {
           }}>
             <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.16em",
               textTransform: "uppercase", color: C.text3 }}>
-              Portfolio
+              {t("portfolio")}
             </span>
             <h1 style={{
               fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 700,
               lineHeight: 1, letterSpacing: "-2px", color: C.text, marginTop: 8,
             }}>
-              My <span style={{ color: C.accent }}>Certificates</span>
+              {t("title").split(" ")[0]}{" "}
+              <span style={{ color: C.accent }}>
+                {t("title").split(" ").slice(1).join(" ")}
+              </span>
             </h1>
             <p style={{ marginTop: 12, fontSize: 13, color: C.text2, maxWidth: 440, lineHeight: 1.7 }}>
-              Verified credentials — click any card to preview.
+              {t("subtitle")}
             </p>
           </div>
 
@@ -207,7 +201,7 @@ export default function CertificatesPage() {
                     border: "1px solid #00ff9930",
                     color: C.accent,
                   }}>
-                    📄 Preview
+                    📄 {t("preview")}
                   </span>
                   <span style={{
                     width: 34, height: 34, borderRadius: 8, fontSize: 16,
@@ -259,7 +253,7 @@ export default function CertificatesPage() {
               <button className="close-btn" onClick={() => setActive(null)}>✕</button>
             </div>
 
-            {/* Body — Google Drive iframe */}
+            {/* Body */}
             <div style={{ flex: 1, overflow: "hidden" }}>
               <iframe
                 src={`https://drive.google.com/file/d/${active.fileId}/preview`}
@@ -274,13 +268,15 @@ export default function CertificatesPage() {
               display: "flex", justifyContent: "space-between", alignItems: "center",
               padding: "14px 24px", borderTop: "1px solid #2a2a32", flexShrink: 0,
             }}>
-              <span style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>Click outside to close</span>
+              <span style={{ fontSize: 11, color: "rgba(255,255,255,0.2)" }}>
+                {t("closeHint")}
+              </span>
               <a
                 href={`https://drive.google.com/file/d/${active.fileId}/view`}
                 target="_blank" rel="noopener noreferrer"
                 className="open-btn"
               >
-                Open in Google Drive ↗
+                {t("openDrive")}
               </a>
             </div>
           </div>

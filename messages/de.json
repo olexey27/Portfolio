@@ -1,0 +1,236 @@
+{
+  "nav": {
+    "home": "Start",
+    "services": "Leistungen",
+    "resume": "Lebenslauf",
+    "work": "Projekte",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "role": "Mobile & Web Developer",
+    "greeting": "Hallo, ich bin",
+    "description": "Wenn Sie einen schnellen Überblick möchten, können Sie meinen Lebenslauf herunterladen oder ihn direkt online ansehen.",
+    "englishCv": "Englischer CV",
+    "germanCv": "Deutscher CV",
+    "webCv": "Web CV",
+    "certificates": "Zertifikate"
+  },
+  "services": {
+    "web": {
+      "title": "Web-Entwicklung",
+      "description": "Ich entwickle moderne, responsive und benutzerfreundliche Webseiten, die auf Ihre Bedürfnisse zugeschnitten sind. Ob ansprechendes Portfolio, professionelle Unternehmenswebseite oder dynamische Webanwendung – ich lege Wert auf sauberes Design, reibungslose Funktionalität und optimale Performance. Gemeinsam schaffen wir eine digitale Präsenz, die wirklich auffällt!"
+    },
+    "ios": {
+      "title": "iOS-Entwicklung",
+      "description": "Ich designe und entwickle intuitive, leistungsstarke iOS-Apps mit Swift und Xcode. Von der Idee bis zur Veröffentlichung liegt mein Fokus darauf, Apps zu erstellen, die Ihrer Vision entsprechen und eine nahtlose Nutzererfahrung bieten. Ob Produktivitätstool, Lifestyle-App oder individuelle Lösung – ich bringe Ihre Ideen im Apple-Ökosystem zum Leben."
+    }
+  },
+  "work": {
+    "project": "Projekt",
+    "liveProject": "Live-Projekt",
+    "githubRepo": "GitHub-Repository",
+    "projects": [
+      {
+        "description": "WatchChain ist eine innovative iOS-App, die den Kauf und Verkauf von NFTs sowie den Kryptohandel vereinfacht. Entwickelt mit Xcode, bietet die App eine intuitive Benutzeroberfläche und nahtlose Firebase-Integration für Authentifizierung und Datenverwaltung."
+      },
+      {
+        "description": "Eine responsive und moderne Portfolio-Website, entwickelt mit React und Next.js, die meine Fähigkeiten, Projekte und Erfahrungen als Entwickler präsentiert. Mit reibungsloser Navigation, integriertem Kontaktformular und Optimierung für Vercel."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Lass uns zusammenarbeiten 🤜🏼🤛🏽",
+    "description": "Suchen Sie einen engagierten Entwickler, der Ihre Ideen zum Leben erweckt? Als Mobile & Web Developer bin ich bereit, neue Herausforderungen anzunehmen und Ihnen dabei zu helfen, funktionale und benutzerfreundliche Anwendungen und Webseiten zu erstellen. Füllen Sie das Formular aus und ich melde mich, um gemeinsam Ihre Vision zu besprechen.",
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "selectService": "Leistung auswählen",
+    "webDev": "Web-Entwicklung",
+    "iosDev": "Xcode / iOS",
+    "other": "Sonstiges",
+    "message": "Ihre Nachricht hier eingeben.",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "success": "✅ Nachricht gesendet! Ich melde mich bald bei Ihnen.",
+    "error": "❌ Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "networkError": "❌ Netzwerkfehler. Bitte versuchen Sie es erneut.",
+    "phone_label": "Telefon",
+    "email_label": "E-Mail",
+    "linkedin_label": "LinkedIn"
+  },
+  "certificates": {
+    "portfolio": "Portfolio",
+    "title": "Meine Zertifikate",
+    "subtitle": "Verifizierte Nachweise – klicken Sie auf eine Karte zur Vorschau.",
+    "preview": "Vorschau",
+    "closeHint": "Außerhalb klicken zum Schließen",
+    "openDrive": "In Google Drive öffnen ↗"
+  },
+  "cv": {
+    "sections": {
+      "aboutMe": "Über mich",
+      "experience": "Berufserfahrung",
+      "skills": "Fähigkeiten",
+      "awards": "Auszeichnungen",
+      "education": "Ausbildung",
+      "languages": "Sprachen",
+      "softSkills": "Soziale Kompetenzen",
+      "hobbies": "Hobbys"
+    },
+    "tagline": "iOS-Apps mit SwiftUI & Full-Stack-Webanwendungen mit Angular und ASP.NET Core.",
+    "about": "Selbstständiger Mobile & Web Developer mit solider Grundlage in iOS (Swift, SwiftUI) und Full-Stack-Webentwicklung (Angular, ASP.NET Core, Next.js). Über 200 Stunden praktische Kurse und eine zertifizierte Berufsqualifikation in der App-Entwicklung abgeschlossen. Mehrsprachiger Kommunikator mit praktischer Erfahrung in schnelllebigen kundenorientierten Umgebungen. Leidenschaft für sauberen Code, modernes Design und kontinuierliche Weiterentwicklung.",
+    "softSkills": [
+      "Schnelle Auffassungsgabe in neuen Umgebungen",
+      "Belastbarkeit & Arbeiten unter Druck",
+      "Teamfähigkeit & Zusammenarbeit",
+      "Lösungsorientiertes Denken im Arbeitsalltag"
+    ],
+    "hobbies": [
+      "Programmierung von Open-Source-Projekten",
+      "Künstliche Intelligenz & Automatisierung",
+      "Fitness & Outdoor-Aktivitäten"
+    ],
+    "languages": [
+      {
+        "lang": "Deutsch",
+        "level": "C2"
+      },
+      {
+        "lang": "Russisch",
+        "level": "C1"
+      },
+      {
+        "lang": "Englisch",
+        "level": "B2"
+      },
+      {
+        "lang": "Portugiesisch",
+        "level": "A1"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2026",
+        "title": "iOS Development Masterclass 2026",
+        "desc": "Fortgeschrittener SwiftUI & SwiftData-Kurs mit Apple Intelligence und iOS 26 abgeschlossen. 37,5 Std."
+      },
+      {
+        "year": "2024",
+        "title": "iOS & Swift Bootcamp",
+        "desc": "60,5-stündiges iOS-Bootcamp von Dr. Angela Yu abgeschlossen — 25+ Apps mit SwiftUI, ARKit & CoreML entwickelt."
+      },
+      {
+        "year": "2024",
+        "title": "Portfolio-Website Launch",
+        "desc": "Persönliches Portfolio auf olexey27.space mit Next.js, TypeScript und Tailwind CSS veröffentlicht."
+      },
+      {
+        "year": "2023",
+        "title": "IT-Fachkraft App-Entwicklung",
+        "desc": "Zertifiziert vom Syntax Institut nach 2.300 Unterrichtseinheiten in iOS, Android, UX/UI und Web-Grundlagen."
+      }
+    ],
+    "education": [
+      {
+        "year": "Feb 2022 – Feb 2023",
+        "degree": "IT-Fachkraft für App-Entwicklung (iOS & Android)",
+        "institution": "Syntax Institut · Remote · Berlin, Deutschland"
+      },
+      {
+        "year": "bis 2015",
+        "degree": "Schulabschluss (Mittlere Reife)",
+        "institution": "Gesamtschule Kierspe · Deutschland"
+      }
+    ],
+    "experience": [
+      {
+        "period": "März 2025 – Heute",
+        "role": "Content Manager",
+        "company": "Teleperformance Portugal",
+        "bullets": [
+          "Analyse und Moderation von Online-Inhalten gemäß festgelegten Richtlinien",
+          "Unterstützung bei der Aufrechterhaltung einer sicheren Online-Umgebung",
+          "Dokumentation und Weiterleitung von Richtlinienverstößen"
+        ]
+      },
+      {
+        "period": "März 2022 – März 2025",
+        "role": "Servicekraft (Teilzeit)",
+        "company": "Stückwerk Lüdenscheid",
+        "bullets": [
+          "Kundenservice und Bestellannahme in einem Restaurant",
+          "Kassendienst und Koordination von Bestellungen",
+          "Unterstützung im Speiseservice und täglichen Restaurantbetrieb"
+        ]
+      },
+      {
+        "period": "Mai 2019 – Feb 2022",
+        "role": "Store Manager",
+        "company": "Alles Taco GmbH & Blubber Botschaft UG",
+        "bullets": [
+          "Verantwortlich für den täglichen Betrieb und das Teammanagement",
+          "Planung für Personal, Inventar und Umsatzziele",
+          "Sicherstellung von Service-, Qualitäts- und Umsatzstandards"
+        ]
+      },
+      {
+        "period": "Juni 2018 – Feb 2022",
+        "role": "Verfahrensmechaniker",
+        "company": "Erwin Seckelmann Kunststofftechnik",
+        "bullets": [
+          "Einrichtung, Betrieb und Überwachung von Produktionsanlagen",
+          "Qualitätskontrolle der hergestellten Produkte",
+          "Wartung und Kleinreparaturen an Maschinen"
+        ]
+      },
+      {
+        "period": "Aug 2015 – Apr 2018",
+        "role": "Kommissionierung",
+        "company": "ESCHA GmbH & Co.KG",
+        "bullets": [
+          "Unterstützung bei Inventuren und Lagerorganisation",
+          "Kontrolle von Mengen und Produktqualität",
+          "Zusammenstellung von Kundenbestellungen aus dem Lager"
+        ]
+      }
+    ]
+  },
+  "resume": {
+    "tabs": {
+      "experience": "Erfahrung",
+      "education": "Ausbildung",
+      "skills": "Fähigkeiten",
+      "about": "Über mich"
+    },
+    "experience": {
+      "title": "Meine Erfahrung 🛠️",
+      "description": "Im Laufe meiner Karriere habe ich umfangreiche und vielfältige Erfahrungen in verschiedenen Branchen gesammelt, die meinen starken Arbeitseinsatz, meine Problemlösungsfähigkeiten und meine Teamkompetenz gefördert haben. Diese verschiedenen Rollen haben mir ein vielseitiges Skillset und eine proaktive Denkweise vermittelt. Ich freue mich auf neue Herausforderungen, passe mich schnell an unterschiedliche Umgebungen an und suche stets nach Wegen, zu wachsen und zum gemeinsamen Erfolg beizutragen."
+    },
+    "education": {
+      "title": "Meine Ausbildung 📚",
+      "description": "Ich habe eine umfassende Ausbildung im Bereich App-Entwicklung absolviert, in der ich eine solide Grundlage in der Entwicklung mobiler Anwendungen erworben habe. Um mein Wissen zu vertiefen, habe ich zusätzliche Kurse auf Udemy belegt, die moderne Technologien wie Kotlin, JavaScript, React und Angular abdecken. Mein Engagement für kontinuierliches Lernen hat mich mit den Werkzeugen ausgestattet, um komplexe Projekte zu bewältigen und mich an neue Technologien anzupassen."
+    },
+    "skills": {
+      "title": "Meine Fähigkeiten 🚀",
+      "description": "Ich verfüge über umfangreiche Erfahrung in der Entwicklung moderner Anwendungen und Web-Lösungen, mit Schwerpunkt auf Swift und JavaScript. Ich entwickle leistungsstarke iOS-Apps sowie dynamische Webanwendungen. Zusätzlich besitze ich solide Kenntnisse in Kotlin für die Android-Entwicklung und Erfahrung mit modernen Frontend-Frameworks wie Angular und React. Ich lege großen Wert auf sauberen, effizienten Code und die Einhaltung von Best Practices."
+    },
+    "about": {
+      "title": "Über mich 👤",
+      "description": "Ich bin Alexej, ein leidenschaftlicher Mobile & Web Developer, der sich auf die Entwicklung moderner, benutzerfreundlicher Anwendungen und innovativer Web-Lösungen spezialisiert hat. Ich entwickle skalierbare Apps für das Apple-Ökosystem sowie performante, responsive Websites. Mein Ziel ist es, qualitativ hochwertige Software zu liefern, die sowohl technisch als auch visuell überzeugt.",
+      "fields": {
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "experience": "Erfahrung",
+        "nationality": "Nationalität",
+        "freelance": "Freelance",
+        "languages": "Sprachen",
+        "experienceValue": "3+ Jahre",
+        "nationality_value": "Deutsch",
+        "freelance_value": "Verfügbar",
+        "languages_value": "Deutsch, Englisch, Russisch"
+      }
+    }
+  }
+}

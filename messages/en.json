@@ -1,0 +1,236 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "resume": "Resume",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "home": {
+    "role": "Mobile & Web Developer",
+    "greeting": "Hello, I'm",
+    "description": "If you would like a quick overview, feel free to download my resume or view it online.",
+    "englishCv": "English CV",
+    "germanCv": "German CV",
+    "webCv": "Web CV",
+    "certificates": "Certificates"
+  },
+  "services": {
+    "web": {
+      "title": "Web Development",
+      "description": "I create modern, responsive, and user-friendly websites tailored to your needs. Whether you're looking for a sleek portfolio, an engaging business website, or a dynamic web application, I focus on clean design, seamless functionality, and optimal performance. Let's build a digital presence that stands out!"
+    },
+    "ios": {
+      "title": "iOS Development",
+      "description": "I design and develop intuitive, high-performance iOS applications using Swift and Xcode. From concept to deployment, I focus on creating apps that align with your vision while delivering a seamless user experience. Whether it's a productivity tool, a lifestyle app, or a custom solution, I'm here to bring your ideas to life within the Apple ecosystem."
+    }
+  },
+  "work": {
+    "project": "project",
+    "liveProject": "Live project",
+    "githubRepo": "GitHub repository",
+    "projects": [
+      {
+        "description": "WatchChain is an innovative iOS app designed to simplify the buying and selling of NFTs and cryptocurrency trading. Developed in Xcode, it offers an intuitive user interface and seamless Firebase integration for authentication and data management."
+      },
+      {
+        "description": "A responsive and modern portfolio website built with React and Next.js, showcasing my skills, projects, and experience as a developer. It features seamless navigation, an integrated contact form, and is optimised for performance on Vercel."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's work together 🤜🏼🤛🏽",
+    "description": "Are you looking for a passionate developer to bring your ideas to life? As a Mobile & Web Developer, I'm eager to take on new challenges and help you create functional, user-friendly applications and websites. Fill out the form and I'll get in touch to discuss how we can bring your vision to life.",
+    "firstname": "First name",
+    "lastname": "Last name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "selectService": "Select a service",
+    "webDev": "Web Development",
+    "iosDev": "Xcode / iOS",
+    "other": "Other",
+    "message": "Type your message here.",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "✅ Message sent! I'll get back to you soon.",
+    "error": "❌ Something went wrong. Please try again.",
+    "networkError": "❌ Network error. Please try again.",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "linkedin_label": "LinkedIn"
+  },
+  "certificates": {
+    "portfolio": "Portfolio",
+    "title": "My Certificates",
+    "subtitle": "Verified credentials — click any card to preview.",
+    "preview": "Preview",
+    "closeHint": "Click outside to close",
+    "openDrive": "Open in Google Drive ↗"
+  },
+  "cv": {
+    "sections": {
+      "aboutMe": "About me",
+      "experience": "Experience",
+      "skills": "Skills",
+      "awards": "Awards",
+      "education": "Education",
+      "languages": "Languages",
+      "softSkills": "Soft Skills",
+      "hobbies": "Hobbies"
+    },
+    "tagline": "Building iOS apps with SwiftUI & full-stack web apps with Angular and ASP.NET Core.",
+    "about": "Self-driven Mobile & Web Developer with a strong foundation in iOS (Swift, SwiftUI) and full-stack web development (Angular, ASP.NET Core, Next.js). Completed 200+ hours of hands-on courses and a certified professional qualification in App Development. Multilingual communicator with hands-on experience in fast-paced customer-facing environments. Passionate about clean code, modern design, and continuously levelling up.",
+    "softSkills": [
+      "Fast learner in new environments",
+      "Working under pressure",
+      "Teamwork & Collaboration",
+      "Problem-solving on the fly"
+    ],
+    "hobbies": [
+      "Programming open-source projects",
+      "Artificial intelligence & automation",
+      "Fitness & outdoor activities"
+    ],
+    "languages": [
+      {
+        "lang": "German",
+        "level": "C2"
+      },
+      {
+        "lang": "Russian",
+        "level": "C1"
+      },
+      {
+        "lang": "English",
+        "level": "B2"
+      },
+      {
+        "lang": "Portuguese",
+        "level": "A1"
+      }
+    ],
+    "awards": [
+      {
+        "year": "2026",
+        "title": "iOS Development Masterclass 2026",
+        "desc": "Completed advanced SwiftUI & SwiftData course with Apple Intelligence and iOS 26. 37.5 hrs."
+      },
+      {
+        "year": "2024",
+        "title": "iOS & Swift Bootcamp",
+        "desc": "Completed 60.5-hour iOS bootcamp by Dr. Angela Yu — built 25+ apps with SwiftUI, ARKit & CoreML."
+      },
+      {
+        "year": "2024",
+        "title": "Portfolio Website Launch",
+        "desc": "Launched personal portfolio at olexey27.space with Next.js, TypeScript and Tailwind CSS."
+      },
+      {
+        "year": "2023",
+        "title": "IT-Fachkraft App-Entwicklung",
+        "desc": "Certified by Syntax Institut after 2.300 teaching units covering iOS, Android, UX/UI and web fundamentals."
+      }
+    ],
+    "education": [
+      {
+        "year": "Feb 2022 – Feb 2023",
+        "degree": "IT-Fachkraft für App-Entwicklung (iOS & Android)",
+        "institution": "Syntax Institut · Remote · Berlin, Germany"
+      },
+      {
+        "year": "until 2015",
+        "degree": "Secondary Education (Intermediate Diploma)",
+        "institution": "Comprehensive School Kierspe · Germany"
+      }
+    ],
+    "experience": [
+      {
+        "period": "Mar 2025 – Present",
+        "role": "Content Manager",
+        "company": "Teleperformance Portugal",
+        "bullets": [
+          "Analysis and moderation of online content following established guidelines",
+          "Support in maintaining a safe online environment",
+          "Documentation and forwarding of guideline violations"
+        ]
+      },
+      {
+        "period": "Mar 2022 – Mar 2025",
+        "role": "Service Employee (Part-Time)",
+        "company": "Stückwerk Lüdenscheid",
+        "bullets": [
+          "Customer service and order acceptance in a restaurant",
+          "Cash register duties and coordination of orders",
+          "Support in food service and daily restaurant operations"
+        ]
+      },
+      {
+        "period": "May 2019 – Feb 2022",
+        "role": "Store Manager",
+        "company": "Alles Taco GmbH & Blubber Botschaft UG",
+        "bullets": [
+          "Responsible for daily operations and team management",
+          "Planning for staff, inventory, and sales goals",
+          "Ensuring service, quality, and revenue standards"
+        ]
+      },
+      {
+        "period": "Jun 2018 – Feb 2022",
+        "role": "Process Mechanic",
+        "company": "Erwin Seckelmann Kunststofftechnik",
+        "bullets": [
+          "Setup, operation, and monitoring of production facilities",
+          "Quality control of manufactured products",
+          "Maintenance and minor repairs of machines"
+        ]
+      },
+      {
+        "period": "Aug 2015 – Apr 2018",
+        "role": "Commissioning",
+        "company": "ESCHA GmbH & Co.KG",
+        "bullets": [
+          "Support with inventories and warehouse organisation",
+          "Control of quantities and quality of products",
+          "Compilation of customer orders from stock"
+        ]
+      }
+    ]
+  },
+  "resume": {
+    "tabs": {
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills",
+      "about": "About me"
+    },
+    "experience": {
+      "title": "My Experience 🛠️",
+      "description": "Throughout my career, I have gained extensive and diverse experience across various industries, which has cultivated a strong work ethic, refined problem-solving abilities, and solid teamwork skills. These varied roles have provided me with a versatile skill set and a proactive mindset. I enjoy taking on new challenges, quickly adapting to different environments, and constantly seeking ways to grow and contribute to collective success."
+    },
+    "education": {
+      "title": "My Education 📚",
+      "description": "I completed a comprehensive training programme in app development, where I gained a strong foundation in building mobile applications and understanding software development principles. To further enhance my knowledge, I pursued additional learning through Udemy courses covering modern technologies such as Kotlin, JavaScript, React, and Angular. My commitment to continuous learning has equipped me with the tools to tackle complex projects and adapt to evolving technologies."
+    },
+    "skills": {
+      "title": "My Skills 🚀",
+      "description": "I have extensive experience in developing modern applications and web solutions, with a primary focus on Swift and JavaScript. I create powerful iOS applications as well as dynamic web applications. I also have solid knowledge of Kotlin for Android development and proficiency in modern frontend frameworks such as Angular and React. I stay committed to maintaining clean, efficient code while adhering to industry best practices."
+    },
+    "about": {
+      "title": "About Me 👤",
+      "description": "I'm Alexej, a passionate Mobile & Web Developer focused on creating modern, user-friendly applications and innovative web solutions. I specialise in building scalable apps for the Apple ecosystem as well as performant, responsive websites. I combine technical expertise in Swift and SwiftUI with comprehensive knowledge of web technologies and modern frameworks. My goal is to deliver high-quality software that excels both technically and visually.",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "experience": "Experience",
+        "nationality": "Nationality",
+        "freelance": "Freelance",
+        "languages": "Languages",
+        "experienceValue": "3+ Years",
+        "nationality_value": "German",
+        "freelance_value": "Available",
+        "languages_value": "German, English, Russian"
+      }
+    }
+  }
+}

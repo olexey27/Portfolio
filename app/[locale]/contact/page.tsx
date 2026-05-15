@@ -2,34 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
-
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "+49 160 1869831",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "alexeykrasnokutskiy@googlemail.com",
-  },
-  {
-    icon: <FaLinkedin />,
-    title: "LinkedIn",
-    description: (
-      <a
-        href="https://www.linkedin.com/in/alexej-krasnokutskij-3a2920235/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-accent hover:underline"
-      >
-        𝑪𝒍𝒊𝒄𝙠👆🏼
-      </a>
-    ),
-  },
-];
 
 const inputClass =
   "w-full border border-white/10 rounded-lg px-5 py-4 text-sm text-white placeholder:text-white/30 outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition-all duration-300 hover:border-white/20";
@@ -39,6 +13,35 @@ const inputStyle = { background: "#1c1c22" };
 type Status = "idle" | "loading" | "success" | "error";
 
 const Contact = () => {
+  const t = useTranslations("contact");
+
+  const info = [
+    {
+      icon: <FaPhoneAlt />,
+      title: t("phone_label"),
+      description: "+49 160 1869831",
+    },
+    {
+      icon: <FaEnvelope />,
+      title: t("email_label"),
+      description: "alexeykrasnokutskiy@googlemail.com",
+    },
+    {
+      icon: <FaLinkedin />,
+      title: t("linkedin_label"),
+      description: (
+        <a
+          href="https://www.linkedin.com/in/alexej-krasnokutskij-3a2920235/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline"
+        >
+          𝑪𝒍𝒊𝒄𝙠👆🏼
+        </a>
+      ),
+    },
+  ];
+
   const [form, setForm] = useState({
     firstname: "",
     lastname: "",
@@ -71,7 +74,7 @@ const Contact = () => {
       const data = await res.json();
 
       if (!res.ok) {
-        setErrorMsg(data.error || "Something went wrong.");
+        setErrorMsg(data.error || t("error"));
         setStatus("error");
         return;
       }
@@ -79,7 +82,7 @@ const Contact = () => {
       setStatus("success");
       setForm({ firstname: "", lastname: "", email: "", phone: "", service: "", message: "" });
     } catch {
-      setErrorMsg("Network error. Please try again.");
+      setErrorMsg(t("networkError"));
       setStatus("error");
     }
   };
@@ -95,58 +98,35 @@ const Contact = () => {
 
           {/* ── FORM ── */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col gap-6 p-10 rounded-xl"
-            >
-              <h3 className="text-4xl text-accent">Let's work together 🤜🏼🤛🏽</h3>
-              <p className="text-white/60">
-                Are you looking for a passionate developer to bring your ideas to life?
-                As a junior iOS and web developer, I'm eager to take on new challenges
-                and help you create functional and user-friendly applications or websites.
-                Fill out the form, and I'll get in touch to discuss how we can work
-                together to bring your vision to life.
-              </p>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 rounded-xl">
+              <h3 className="text-4xl text-accent">{t("title")}</h3>
+              <p className="text-white/60">{t("description")}</p>
 
               {/* Input fields */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input
-                  name="firstname"
-                  type="text"
-                  placeholder="Firstname"
-                  value={form.firstname}
-                  onChange={handleChange}
-                  required
-                  className={inputClass}
-                  style={inputStyle}
+                  name="firstname" type="text"
+                  placeholder={t("firstname")}
+                  value={form.firstname} onChange={handleChange}
+                  required className={inputClass} style={inputStyle}
                 />
                 <input
-                  name="lastname"
-                  type="text"
-                  placeholder="Lastname"
-                  value={form.lastname}
-                  onChange={handleChange}
-                  className={inputClass}
-                  style={inputStyle}
+                  name="lastname" type="text"
+                  placeholder={t("lastname")}
+                  value={form.lastname} onChange={handleChange}
+                  className={inputClass} style={inputStyle}
                 />
                 <input
-                  name="email"
-                  type="email"
-                  placeholder="Email address"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  className={inputClass}
-                  style={inputStyle}
+                  name="email" type="email"
+                  placeholder={t("email")}
+                  value={form.email} onChange={handleChange}
+                  required className={inputClass} style={inputStyle}
                 />
                 <input
-                  name="phone"
-                  type="tel"
-                  placeholder="Phone number"
-                  value={form.phone}
-                  onChange={handleChange}
-                  className={inputClass}
-                  style={inputStyle}
+                  name="phone" type="tel"
+                  placeholder={t("phone")}
+                  value={form.phone} onChange={handleChange}
+                  className={inputClass} style={inputStyle}
                 />
               </div>
 
@@ -158,33 +138,35 @@ const Contact = () => {
                 className={`${inputClass} cursor-pointer ${form.service === "" ? "text-white/30" : "text-white"}`}
                 style={inputStyle}
               >
-                <option value="" disabled style={{ background: "#1c1c22", color: "rgba(255,255,255,0.3)" }}>Select a service</option>
-                <option value="Web Development" style={{ background: "#1c1c22", color: "#ffffff" }}>Web Development</option>
-                <option value="iOS Development" style={{ background: "#1c1c22", color: "#ffffff" }}>Xcode / iOS</option>
-                <option value="Other" style={{ background: "#1c1c22", color: "#ffffff" }}>Other</option>
+                <option value="" disabled style={{ background: "#1c1c22", color: "rgba(255,255,255,0.3)" }}>
+                  {t("selectService")}
+                </option>
+                <option value="Web Development" style={{ background: "#1c1c22", color: "#ffffff" }}>
+                  {t("webDev")}
+                </option>
+                <option value="iOS Development" style={{ background: "#1c1c22", color: "#ffffff" }}>
+                  {t("iosDev")}
+                </option>
+                <option value="Other" style={{ background: "#1c1c22", color: "#ffffff" }}>
+                  {t("other")}
+                </option>
               </select>
 
               {/* Message */}
               <textarea
                 name="message"
-                placeholder="Type your message here."
-                value={form.message}
-                onChange={handleChange}
-                required
-                className={`${inputClass} h-[200px] resize-none`}
+                placeholder={t("message")}
+                value={form.message} onChange={handleChange}
+                required className={`${inputClass} h-[200px] resize-none`}
                 style={inputStyle}
               />
 
               {/* Status messages */}
               {status === "success" && (
-                <p className="text-accent text-sm font-semibold">
-                  ✅ Message sent! I'll get back to you soon.
-                </p>
+                <p className="text-accent text-sm font-semibold">{t("success")}</p>
               )}
               {status === "error" && (
-                <p className="text-red-400 text-sm font-semibold">
-                  ❌ {errorMsg}
-                </p>
+                <p className="text-red-400 text-sm font-semibold">❌ {errorMsg}</p>
               )}
 
               {/* Submit button */}
@@ -193,7 +175,7 @@ const Contact = () => {
                 disabled={status === "loading"}
                 className="max-w-52 uppercase flex items-center justify-center gap-2 bg-accent text-primary font-bold px-8 py-4 rounded hover:bg-accent/80 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === "loading" ? "Sending..." : "Send"}
+                {status === "loading" ? t("sending") : t("send")}
               </button>
             </form>
           </div>
